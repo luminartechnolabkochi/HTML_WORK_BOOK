@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Registration Confirmation</title>
+    <meta name="description" content="Registration information for LearnHub students.">
+</head>
+<body>
+    <header>
+        <h1>LearnHub</h1>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="index.html#register">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Registration Information</h2>
+            <p>
+                Thank you for your interest in LearnHub.
+                Please review the details below before submitting your enquiry.
+            </p>
+
+            <section>
+                <h3>What happens next?</h3>
+                <ol>
+                    <li>Our team reviews your enquiry.</li>
+                    <li>A counsellor contacts you.</li>
+                    <li>You receive the batch and course details.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h3>Course enquiry form</h3>
+                <form action="/enquiry/" method="get">
+                    <p>
+                        <label for="enquiry_email">Email address:</label>
+                        <input type="email"
+                               id="enquiry_email"
+                               name="email"
+                               autocomplete="email"
+                               required>
+                    </p>
+                    <p>
+                        <label for="enquiry_course">Course:</label>
+                        <select id="enquiry_course" name="course">
+                            <option value="django">Python Django</option>
+                            <option value="analytics">Data Analytics</option>
+                        </select>
+                    </p>
+                    <button type="submit">Find course information</button>
+                </form>
+            </section>
+
+            <section>
+                <h3>Useful information</h3>
+                <p>
+                    The course content is updated on
+                    <time datetime="2026-11-11">11 November 2026</time>.
+                </p>
+                <p>For additional information, visit the <a href="index.html">main portal</a>.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p><small>LearnHub Student Portal</small></p>
+    </footer>
+</body>
+</html>
